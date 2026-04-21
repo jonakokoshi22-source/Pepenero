@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><h1 class="logo">Pepenero</h1></a>
+      <nav>
+        <a href="menu.html">• Menu</a>
+        <a href="menu.html">• Delivery</a>
+        <a href="book_your_event.html">•Book your event</a>
+        <a href="contact.html">•Contact</a>
+        <a href="join_our_team.html">• Join our team</a>
+      </nav>
+    </header>
+
+    <div class="hero1">
+      <a href="focaccia.html">Focaccia</a>
+      <a href="hot_drinks.html">Coffee</a>
+      <a href="#">Drinks</a>
+      <a href="wines.html">Wines</a>
+      <a href="cocktails.html">Cocktails</a>
+    </div>
+
+    <h1>Coffee</h1>
+
+    <div class="menu-grid">
+      <div class="card">
+        <img class="foto2" src="/foto/IMG_3664.jpeg" width="300px" />
+        Espresso £2.80
+        <button onclick="addToCart('Espresso', 2.5)">Add</button>
+      </div>
+      <div class="card">
+        <img class="foto2" src="/foto/IMG_3664.jpeg" width="300px" />
+        Double Espresso £3.10
+        <button onclick="addToCart('Latte', 3.5)">Add</button>
+      </div>
+      <div class="card">
+        <img class="foto2" src="/foto/IMG_3784.jpeg" width="300px" />
+        Macchiato £3.20
+        <button onclick="addToCart('Focaccia', 5)">Add</button>
+      </div>
+      <div class="card">
+        <img class="foto2" src="/foto/IMG_3785.jpeg" width="300px" />
+        Cappuccino £4.00
+        <button onclick="addToCart('Focaccia', 5)">Add</button>
+      </div>
+      <div class="card">
+        <img class="foto2" src="/foto/IMG_3786.jpeg" width="300px" />
+        Americano £3.20
+        <button onclick="addToCart('Focaccia', 5)">Add</button>
+      </div>
+      <div class="card">
+        <img class="foto2" src="/foto/IMG_3787.jpeg" width="300px" />
+        Latte £4.20
+        <button onclick="addToCart('Focaccia', 5)">Add</button>
+      </div>
+      <div class="card">
+        <img class="foto2" src="/foto/IMG_3788.jpeg" width="300px" />
+        Flat white £3.80
+        <button onclick="addToCart('Focaccia', 5)">Add</button>
+      </div>
+    </div>
+
+    <h3>Your Cart</h3>
+    <ul id="cart"></ul>
+    <p id="total"></p>
+
+    <button onclick="checkout()" class="cta">Checkout</button>
+    <script src="script.js"></script>
+  </body>
+</html>

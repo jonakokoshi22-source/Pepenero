@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Menu - Pepenero</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><h1 class="logo">Pepenero</h1></a>
+      <nav>
+        <a href="menu.html">• Menu</a>
+        <a href="Menu.html">• Delivery</a>
+        <a href="book_your_event.html">• Book your event</a>
+        <a href="contact.html">• Contact</a>
+        <a href="join_our_team.html">• Join our team</a>
+      </nav>
+    </header>
+
+    <div class="hero1">
+      <a href="focaccia.html">Focaccia</a>
+      <a href="hot_drinks.html">Coffee</a>
+      <a href="#">Drinks</a>
+      <a href="wines.html">Wines</a>
+      <a href="cocktails.html">Cocktails</a>
+    </div>
+
+    <section class="page">
+      <h2>Menu</h2>
+      <div class="page1">
+        <a href="focaccia.html"
+          ><img class="foto" src="/foto/IMG_3658.jpeg"
+        /></a>
+        <a href="hot_drinks.html"
+          ><img class="foto" src="/foto/IMG_3664.jpeg"
+        /></a>
+        <a href="cocktails.html"
+          ><img class="foto" src="/foto/IMG_3666.jpeg"
+        /></a>
+        <a href="wines.html"><img class="foto" src="/foto/IMG_3669.jpeg" /></a>
+        <a href="milkshakes.html"
+          ><img class="foto" src="/foto/milkshakes.webp"
+        /></a>
+      </div>
+    </section>
+
+    <section class="page">
+      <h2>Place Your Order</h2>
+
+      <div class="menu-grid">
+        <div class="card">
+          Espresso £2.50
+          <button onclick="addToCart('Espresso', 2.5)">Add</button>
+        </div>
+        <div class="card">
+          Latte £3.50
+          <button onclick="addToCart('Latte', 3.5)">Add</button>
+        </div>
+        <div class="card">
+          Focaccia £5.00
+          <button onclick="addToCart('Focaccia', 5)">Add</button>
+        </div>
+      </div>
+
+      <h3>Your Cart</h3>
+      <ul id="cart"></ul>
+      <p id="total"></p>
+
+      <button onclick="checkout()" class="cta">Checkout</button>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

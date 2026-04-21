@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book your event</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><h1 class="logo">Pepenero</h1></a>
+      <nav>
+        <a href="menu.html">• Menu</a>
+        <a href="menu.html">• Delivery</a>
+        <a href="book_your_event.html">• Book your event</a>
+        <a href="contact.html">• Contact</a>
+        <a href="join_our_team.html">• Join our team</a>
+      </nav>
+    </header>
+
+    <div class="hero1">
+      <a href="focaccia.html">Focaccia</a>
+      <a href="hot_drinks.html">Coffee</a>
+      <a href="#">Drinks</a>
+      <a href="wines.html">Wines</a>
+      <a href="cocktails.html">Cocktails</a>
+    </div>
+
+    <div class="event">
+      <h1>Book Your Event with us</h1>
+    </div>
+
+    <div class="container">
+      <h2>Event Booking Form</h2>
+
+      <form action="#" method="post">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="event-type">Event Type</label>
+        <select id="event-type" name="event-type" required>
+          <option value="">Select an event</option>
+          <option value="wedding">Wedding</option>
+          <option value="birthday">Birthday Party</option>
+          <option value="corporate">Corporate Event</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="date">Event Date</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="guests">Number of Guests</label>
+        <input type="number" id="guests" name="guests" min="1" required />
+
+        <label for="message">Additional Details</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Submit Booking</button>
+      </form>
+    </div>
+  </body>
+</html>

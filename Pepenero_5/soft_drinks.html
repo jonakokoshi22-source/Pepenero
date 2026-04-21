@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soft Drinks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Soft drinks</h1>
+    </header>
+
+    <div class="menu-grid">
+        <div class="card">
+          Espresso £2.80
+          <button onclick="addToCart('Espresso', 2.5)">Add</button>
+        </div>
+        <div class="card">
+          Double Espresso £3.10
+          <button onclick="addToCart('Latte', 3.5)">Add</button>
+        </div>
+        <div class="card">
+          Macchiato £3.20
+          <button onclick="addToCart('Focaccia', 5)">Add</button>
+        </div>
+        <div class="card">
+          Cappuccino £4.00
+          <button onclick="addToCart('Focaccia', 5)">Add</button>
+        </div>
+        <div class="card">
+          Americano £3.20
+          <button onclick="addToCart('Focaccia', 5)">Add</button>
+        </div>
+        <div class="card">
+            Latte £4.20
+          <button onclick="addToCart('Focaccia', 5)">Add</button>
+        </div>
+        <div class="card">
+          Flat white £3.80
+          <button onclick="addToCart('Focaccia', 5)">Add</button>
+        </div>
+      </div>
+
+      <h3>Your Cart</h3>
+      <ul id="cart"></ul>
+      <p id="total"></p>
+
+      <button onclick="checkout()" class="cta">Checkout</button>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

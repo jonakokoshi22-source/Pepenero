@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wines</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><h1 class="logo">Pepenero</h1></a>
+      <nav>
+        <a href="menu.html">• Menu</a>
+        <a href="menu.html">• Delivery</a>
+        <a href="book_your_event.html">• Book your event</a>
+        <a href="contact.html">• Contact</a>
+      </nav>
+    </header>
+
+    <div class="hero1">
+      <a href="focaccia.html">Focaccia</a>
+      <a href="hot_drinks.html">Coffee</a>
+      <a href="#">Drinks</a>
+      <a href="wines.html">Wines</a>
+      <a href="cocktails.html">Cocktails</a>
+    </div>
+
+    <h1>Wines</h1>
+    <div class="menu-grid">
+      <div class="card">
+        <img class="foto1" src="/foto/IMG_3658.jpeg" width="300px" />
+        Tomato and mozzarella £
+        <button onclick="addToCart('Espresso', 2.5)">Add</button>
+      </div>
+      <div class="card">
+        <img class="foto1" src="/foto/IMG_4244.jpeg" width="300px" />
+        Parma Ham £
+        <button onclick="addToCart('Latte', 3.5)">Add</button>
+      </div>
+      <div class="card">
+        <img class="foto1" src="/foto/IMG_3660.jpeg" width="300px" />
+        Pulled pork £
+        <button onclick="addToCart('Focaccia', 5)">Add</button>
+      </div>
+      <div class="card">
+        <img class="foto1" src="/foto/IMG_3658.jpeg" width="300px" />
+        Create your own £
+        <button onclick="addToCart('Focaccia', 5)">Add</button>
+      </div>
+    </div>
+
+    <h3>Your Cart</h3>
+    <ul id="cart"></ul>
+    <p id="total"></p>
+
+    <button onclick="checkout()" class="cta">Checkout</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

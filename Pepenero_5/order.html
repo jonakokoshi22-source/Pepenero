@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Order - Pepenero</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">Pepenero</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="page">
+      <h2>Place Your Order</h2>
+
+      <div class="menu-grid">
+        <div class="card">
+          Espresso £2.50
+          <button onclick="addToCart('Espresso', 2.5)">Add</button>
+        </div>
+        <div class="card">
+          Latte £3.50
+          <button onclick="addToCart('Latte', 3.5)">Add</button>
+        </div>
+        <div class="card">
+          Focaccia £5.00
+          <button onclick="addToCart('Focaccia', 5)">Add</button>
+        </div>
+      </div>
+
+      <h3>Your Cart</h3>
+      <ul id="cart"></ul>
+      <p id="total"></p>
+
+      <button onclick="checkout()" class="cta">Checkout</button>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
